@@ -13,11 +13,32 @@ export const Content = styled(Dialog.Content)`
   min-width: 32rem;
   border-radius: 6px;
   padding: 2.5rem 3rem;
-  background: none${props => props.theme["gray-800"]};
+  background: ${props => props.theme["gray-800"]};
 
   /*centralizando coisas na tela */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
+
+  form {
+    margin-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input {
+        border-radius: 6px;
+        border: 0;
+        background: ${props => props.theme["gray-900"]};
+        color: ${props => props.theme["gray-300"]};
+        padding: 1rem;
+
+        &::placeholder {
+            color: ${props => props.theme["gray-500"]};
+        }
+
+    }
+  }
 `
