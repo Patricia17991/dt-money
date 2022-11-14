@@ -1,5 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import { Close, Content, Overlay } from "@radix-ui/react-dialog";
+import { CloseButton, Content, Overlay } from "./styles";
 import { X } from "phosphor-react";
 
 export function NewTransactionModal() {
@@ -9,9 +9,9 @@ export function NewTransactionModal() {
                <Content>
                       <Dialog.Title>Nova Transação</Dialog.Title>
 
-                      <Close>
+                      <CloseButton>
                         <X size={24}/>
-                      </Close>
+                      </CloseButton>
 
                       <form action="">
                         <input type="text" placeholder="Descrição" required/>
