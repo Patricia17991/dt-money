@@ -8,7 +8,7 @@ export function Transactions() {
 
   //carregamento de lista através de api
   useEffect(() => {
-    fetch('http://localhost:33333/transactions').then(response => {
+    fetch('http://localhost:3333/transactions').then(response => {
     console.log(response)
     })
   },[])
