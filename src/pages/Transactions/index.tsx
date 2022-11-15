@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/SearchForm";
@@ -6,10 +7,11 @@ import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styl
 export function Transactions() {
 
   //carregamento de lista através de api
-  fetch('http://localhost:33333/transactions').then(response => {
+  useEffect(() => {
+    fetch('http://localhost:33333/transactions').then(response => {
     console.log(response)
-  })
-
+    })
+  },[])
     return (
         <div>
             <Header/>
