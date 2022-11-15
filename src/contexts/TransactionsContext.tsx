@@ -15,6 +15,4 @@ interface TransactionContextType {
   transactions: Transaction[];
 }
 
-const TransactionContext = createContext<TransactionContextType>({
-    transactions: []
-})
+const TransactionContext = createContext({} as TransactionContextType)
