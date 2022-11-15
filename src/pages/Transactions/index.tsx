@@ -4,6 +4,12 @@ import { SearchForm } from "./components/SearchForm";
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
 
 export function Transactions() {
+
+  //carregamento de lista através de api
+  fetch('http://localhost:33333/transactions').then(response => {
+    console.log(response)
+  })
+
     return (
         <div>
             <Header/>
