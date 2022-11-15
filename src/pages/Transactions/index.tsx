@@ -8,12 +8,12 @@ export function Transactions() {
 
   //carregamento de lista através de api
   useEffect(() => {
-    fetch('http://localhost:3333/transactions').then(response => {
-     response.json().then(data => {
+    fetch('http://localhost:3333/transactions')
+    .then(response => response.json())
+    .then(data => {
       console.log(data)
-     })
     })
-  },[])
+  }, [])
     return (
         <div>
             <Header/>
