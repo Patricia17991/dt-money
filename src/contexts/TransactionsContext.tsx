@@ -1,4 +1,4 @@
-import { createContext } from "react"
+import { createContext, ReactNode } from "react"
 
 
 interface Transaction {
@@ -15,4 +15,16 @@ interface TransactionContextType {
   transactions: Transaction[];
 }
 
+interface TransactionsProviderProps {
+    children: ReactNode;
+}
+
 const TransactionContext = createContext({} as TransactionContextType)
+
+export function TransactionsProvider({children} : TransactionsProviderProps) {
+    return(
+        <TransactionContext.Provider value={{transactions: []}}>
+            {children}
+        </TransactionContext.Provider>
+    )
+}
