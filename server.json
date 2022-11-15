@@ -13,8 +13,16 @@
             "description": "Hamburger",
             "type": "outcome",
             "category": "Alimentação",
-            "price": 50,
+            "price": 60,
             "createdAt": "2022-07-29T19:40:44.5052"
+        },
+        {
+            "id": 3,
+            "description": "Ignite",
+            "type": "outcome",
+            "category": "Educação",
+            "price": 1980,
+            "createdAt": "2022-07-29T19:40:24.5052"
         }
     ]
 }
