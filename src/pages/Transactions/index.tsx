@@ -1,17 +1,19 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
 
 export function Transactions() {
+//carregamento de lista através de api
 
-  //carregamento de lista através de api
+  const [transactions, setTransactions] = useState([])
+
   async function loadTransactions() {
     const response = await fetch('http://localhost:3333/transactions')
     const data = await response.json()
 
-    console.log(data)
+    setTransactions(data)
   }
   useEffect(() => {
     loadTransactions()
