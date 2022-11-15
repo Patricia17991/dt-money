@@ -9,7 +9,9 @@ export function Transactions() {
   //carregamento de lista através de api
   useEffect(() => {
     fetch('http://localhost:3333/transactions').then(response => {
-    console.log(response)
+     response.text().then(data => {
+      console.log(data)
+     })
     })
   },[])
     return (
