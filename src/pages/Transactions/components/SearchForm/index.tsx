@@ -16,7 +16,7 @@ export function SearchForm() {
   const fetchTransactions = useContextSelector(
     TransactionsContext,
     (context) => {
-      return context.fetchTransactions
+      return context.transactions
     },
   )
 
