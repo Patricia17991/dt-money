@@ -23,8 +23,10 @@ export function SearchForm() {
      resolver: zodResolver(searchFormSchema),
   })
 
-  function handleSearchTransactions(data: SearchFormInputs) {
-     console.log(data)
+async function handleSearchTransactions(data: SearchFormInputs) {
+    await new Promise(resolver => setTimeout(resolve, 2000))
+    
+    console.log(data)
   }//functions disparadas por users, começam com 'handle'
 
     return(
