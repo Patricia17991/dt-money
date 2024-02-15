@@ -2,35 +2,20 @@
   "transactions": [
     {
       "id": 1,
-      "description": "Desenvolvimento de site",
+      "description": "Energia",
       "type": "income",
-      "category": "Venda",
-      "price": 14000,
+      "category": "despesas básicas",
+      "price": 100,
       "createdAt": "2022-07-29T19:36:44.5052"
     },
     {
       "id": 2,
-      "description": "Hamburger",
+      "description": "Projeto Freelancer",
       "type": "outcome",
-      "category": "Alimentação",
-      "price": 60,
+      "category": "Trabalhos",
+      "price": 3000,
       "createdAt": "2022-07-29T19:40:44.5052"
-    },
-    {
-      "id": 3,
-      "description": "Ignite",
-      "type": "outcome",
-      "category": "Educação",
-      "price": 1980,
-      "createdAt": "2022-07-29T19:40:24.5052"
-    },
-    {
-      "description": "Poupança",
-      "price": 400,
-      "category": "finanças",
-      "type": "income",
-      "createdAt": "2022-11-17T13:33:39.140Z",
-      "id": 4
     }
+   
   ]
 }
